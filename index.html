@@ -1,66 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Irc-0chan by irc-0chan</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<title>#0chan IRC channel</title>
+	<link rel="shortcut icon" href="images/0chan.ico" >
+	<meta charset="utf-8">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<style type="text/css">
+		body {
+		background-color:#EEEEEE;
+		color: rgb(51, 51, 51);
+		font: 10pt sans-serif;
+		}
+		h2 {
+		color: rgb(255, 102, 0);
+		}
+		.modal-body {
+		max-height: 500px;
+		max-width: 400px;
+		}
+	</style>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Irc-0chan</h1>
-        <p></p>
+<div class="container">
 
-        <p class="view"><a href="https://github.com/irc-0chan/irc-0chan">View the Project on GitHub <small>irc-0chan/irc-0chan</small></a></p>
+	<noscript><h1><font color="red">Achtung! У тебя отключены скрипты и работать нихуя не будет. Включи их БЫЫЫЫСТРА БЛЯЯЯ!<br></font></h1></noscript>
+	<ul class="nav nav-pills pull-right">
+		<li><a href="#chat" data-toggle="pill">[ CHAT ]</a></li>
+		<li class="active"><a href="#rtfm" data-toggle="pill">[ INFO ]</a></li>
+	</ul>
+	<br>
+
+	<div class="tab-content">
+
+		<div class="tab-pane" id="chat">
+			<h1 style="color: rgb(255, 102, 0)">[ #0chan ]</h1>
+
+			<hr>
+			<iframe width="100%" height="500" scrolling="no" frameborder="0" src="http://irc.crypt0.in/"></iframe>
+		</div>
+
+<!-- zdes drugie tabi-->
+
+		<div class="tab-pane  active" id="rtfm">
+			<h1 style="color: rgb(255, 102, 0)">[ INFO ]</h1><hr>
+<!--//////////////
+	MANUAL
+//////////////////-->
+
+<p align="center"><img src="http://the-sameperson.narod2.ru/images/r_logo.gif" /></p>
+<h2>Добро пожаловать в IRC чат нульчана!</h2><br>
+Уже знаком с IRC? Подключайся: <a href="irc://irc.crypt0.in/0chan"><button class="btn">irc://irc.crypt0.in/0chan</button></a>!
+<br><br>
+<font color="blue">Что такое IRC:</font><br>
+Грубо говоря, IRC - чаты, где можно общаться свободно и без регистрации.<br>
+Канал #0chan существует более года, и у нас постоянно есть интересные собеседники онлайн.<br>
+Подробнее об IRC можно прочитать на <a href="https://ru.wikipedia.org/wiki/IRC" target="_blank">Wikipedia</a> и на <a href="http://lurkmore.to/IRC" target="_blank">Lurkmore</a>.
+<br><br>
+<font color="blue">Техническая часть для новичков:</font><br>
+Если хотите прямо сейчас попробовать наш чат, можете зайти к нам через этот сайт. Сверху справа нажмите кнопочку CHAT, выберите ник и нажмите Connect.<br><br>
+Предпочтительнее сидеть в IRC через IRC клиент, лучшими вариантами для новичка будут KVIRC или XCHAT. <a href="http://google.com/?q=irc+client">Используйте гугл, чтобы скачать нужный клиент!</a><br>
+<br>
+В различных клиентах подключение настраивается по разному.<br>
+В настройках своего клента добавьте сервер irc.crypt0.in, порт 6667. Кодировку поставьте utf-8. Потом подключайтесь к серверу и заходите на канал #0chan.<br>
+<br>
+Этого должно быть достаточно.<br>
+<br>
+<font color="blue">Для продвинутых пользователей:</font><br>
+Если вы хотите зайти к нам через <a href="https://www.torproject.org/">TOR</a>:<br>
+В качестве сервера используйте ht5tdqo7hlyswrg6.onion, порт 6667. Подключайтесь через сокс прокси 127.0.0.1:9050.<br>Оставайтесь анонимны!<br>
+<br>
+Если вы хотите использовать шифрование, подключайтесь к порту 6697 и в настройках поставьте "принимать самоподписанные сертификаты". Не используйте шифрование, если подключаетесь через TOR!<br>
+<br>
+Как зарегистрировать ник:<br>
+Напишите в чат "/msg nickserv REGISTER ТВОЙ_ПАРОЛЬ ЛЕВОЕ_МЫЛО".<br>
+Потом можно зарегистрировать оригинальный vhost - "/msg hostserv REQUEST твой.оригинальный.vhost; /hostserv on"<br>
+<br>
 
 
-        <ul>
-          <li><a href="https://github.com/irc-0chan/irc-0chan/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/irc-0chan/irc-0chan/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/irc-0chan/irc-0chan">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<hr>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<h3>Designer Templates</h3>
+</div>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>Rather Drive Stick?</h3>
+</div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/irc-0chan">irc-0chan</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+</body>
 </html>
